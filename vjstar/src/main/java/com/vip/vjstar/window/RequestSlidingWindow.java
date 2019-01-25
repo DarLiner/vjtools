@@ -62,9 +62,8 @@ public class RequestSlidingWindow {
     public long getFailNum() {
         if (capacity.get() >= size) {
             return size - bitSet.cardinality();
-        } else {
-            return capacity.get() - bitSet.cardinality();
         }
-        
+            return capacity.get() - bitSet.cardinality();
+
     }
 }
